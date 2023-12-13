@@ -7,7 +7,7 @@ let gatito = document.getElementById("gatito");
 
 play_btn.addEventListener("click",()=>{
     cancion.play();
-  
+    contenedor.style.animationPlayState ="running";
     gatito.style.animationPlayState ="running";
 
 })
