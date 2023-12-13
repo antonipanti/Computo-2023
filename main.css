@@ -1,0 +1,91 @@
+h1{
+    font-style:oblique;
+    font-size: 100px; 
+}
+body{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+justify-content: center;
+align-items: center;
+background-image: linear-gradient(rgb(255,195,0), rgb(199, 0, 57), rgb(51,255,161));
+}
+.fotito{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor{
+    height: 30rem;
+    width: 30rem;
+    border-radius: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    animation-name: cambio; 
+    animation-duration: 0.5s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    background-color: rgb(130, 51, 255 );
+    animation-play-state: paused;
+
+}   
+.gatito{
+    width: 95%;
+    height: 95%;
+    border-radius: 50rem;
+    object-fit: cover;
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-play-state: paused;
+
+}
+.botones_aaa{
+    height: 100px;
+    width: 0vw;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+}
+
+
+.play-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.pause-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.stop-btn{
+    width: 50px;
+    height: 50px;
+    
+}
+
+
+@keyframes cambio {
+    0%{ 
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
